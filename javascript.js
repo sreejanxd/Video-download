@@ -54,7 +54,7 @@ function handleSuccessResponse(data, inputUrl) {
         // Generate and display download buttons
         generateDownloadButtons(data);
     } else {
-        alert("Issue: Unable to get download link. Please check the URL and contact us on Social Media @TheOfficialVKr");
+        alert("Issue: Unable to get download link. Please check the URL and contact us on Social Media @AnjanDhar");
         document.getElementById("loading").style.display = "none";
     }
 }
@@ -102,7 +102,7 @@ function generateDownloadButtons(videoData) {
     }
     // If no download links found
     if (downloadV.innerHTML === "") {
-        alert("Server Down due to Too Many Requests. Please contact us on Social Media @TheOfficialVKr");
+        alert("Server Down due to Too Many Requests. Please contact us on Social Media @AnjanDhar");
         document.getElementById("container").style.display = "none";
         location.href = "https://vkrdownloader.vercel.app/download.php?vkr=" + inputUrl;
     }
